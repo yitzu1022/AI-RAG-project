@@ -23,11 +23,11 @@
 
 在系統實作上，我們：
 
+- 使用 **自行微調的 Embedding Model** 進行古文語意向量化 
 - 使用 **ChromaDB** 建立向量資料庫，儲存唐詩文本的語意向量  
-- 採用 **Gemini Pro** 作為主要的 Large Language Model (LLM)  
-- 使用 **自行微調的 Embedding Model** 進行古文語意向量化  
+- 採用 **Gemini Pro** 作為主要的 Large Language Model (LLM)，LLM會參考檢索回的文本進行唐詩生成。
 - 結合 **Cross-Encoder** 對檢索結果進行重排序 (re-ranking)，提升檢索效果  
-- 融入 **Advanced RAG** 相關概念，進一步優化整體生成品質  
+- 融入 **Advanced RAG** 相關概念，進一步提升整體生成品質  
 
 透過上述方法，本專題期望建立一套兼具文化內涵與技術深度的唐詩生成系統，探索生成式 AI 在古典文學傳承上的應用潛力。
 
